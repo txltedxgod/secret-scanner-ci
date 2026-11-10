@@ -1,4 +1,26 @@
 [project]
-name = 'secret-scanner-ci'
-version = '0.1.0'
-dependencies = ['fastapi>=0.110.0', 'pydantic>=2.5.0', 'uvicorn>=0.28.0']
+name = "secret-scanner-ci"
+version = "0.2.0"
+description = "High-speed pre-commit & CI secret scanner detecting leaked API keys, tokens, and high-entropy secrets"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "pydantic>=2.5.0",
+    "uvicorn>=0.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.27.0",
+    "pytest-cov>=4.1.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::pytest.PytestRemovedIn10Warning",
+    "ignore::DeprecationWarning",
+]

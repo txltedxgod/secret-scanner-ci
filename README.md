@@ -11,6 +11,18 @@ High-speed DevSecOps pre-commit and CI/CD secret scanner. Detects leaked API key
 
 ---
 
+## 🎬 Feature Demo
+
+<p align="center">
+  <img src="assets/demo.gif" alt="Secret Scanner CI Feature Demo — Pre-Commit & CI/CD Secret Scanner with Shannon Entropy" width="840" />
+</p>
+<p align="center">
+  <sub><a href="assets/demo.mp4">Watch / Download 1080p60 MP4</a></sub>
+</p>
+
+---
+---
+
 ## 🏛️ Detection Pipeline & Architecture
 
 ```mermaid
